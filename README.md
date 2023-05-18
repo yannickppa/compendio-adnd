@@ -1,3 +1,3 @@
 
-# v0.2 Compêndio AD&D
+# Compêndio AD&D v0.3
 Compilado desta versão do jogo de Advanced Dungeons & Dragons.
