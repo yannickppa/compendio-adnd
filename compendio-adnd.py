@@ -23,7 +23,7 @@ def locais():
 		del val_key
 		while True:
 			os.system('clear')
-			f = open("/home/yannick/compêndio/v0.2/locais/locais_iserilha", "r")
+			f = open("./locais/locais_iserilha", "r")
 			print(f.read())
 			val_key = keyboard.read_key()
 			if val_key == 'z':
@@ -54,7 +54,7 @@ def npcs():
 		del val_key
 		while True:
 			os.system('clear')
-			f = open("/home/yannick/compêndio/v0.2/npcs/npcs_jena", "r")
+			f = open("./npcs/npcs_jena", "r")
 			print(f.read())
 			val_key = keyboard.read_key()
 			if val_key == 'z':
@@ -177,7 +177,7 @@ def run():
 			del val_key
 			while True:
 				os.system('clear')
-				f = open("/home/yannick/compêndio/v0.2/regras/regras", "r")
+				f = open("./regras/regras", "r")
 				print(f.read())
 				val_key = keyboard.read_key()
 				if val_key == 'x':
