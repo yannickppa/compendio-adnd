@@ -1,4 +1,3 @@
-# Compêndio
 
 import keyboard
 import os
