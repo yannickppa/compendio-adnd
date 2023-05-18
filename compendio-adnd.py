@@ -1,23 +1,12 @@
-# Compêndio 0.2 teste de push! 222
+# Compêndio
 
 import keyboard
 import os
 
-# locais
-
-def title_locais():
-	os.system('clear')
-	print('-------------------------------')
-	print(' $ Buscar ________ em "locais"')
-	print(' ')
-	print(' #x para voltar')
-	print('-------------------------------')
-	print(' ')
-	print(' #a Iserilha')
-	print(' ')
-
 def locais():
-	title_locais()
+	os.system('clear')
+	m = open("./locais/menu_locais", "r")
+	print(m.read())
 	val_key = keyboard.read_key()
 	if val_key == 'a':
 		del val_key
@@ -30,25 +19,13 @@ def locais():
 				del val_key
 				locais()
 	elif val_key == 'x':
-		title_adnd2e()
 		run()
 	locais()
 
-# npcs
-
-def title_npcs():
-	os.system('clear')
-	print('-------------------------------')
-	print(' $ Buscar ________ em "npcs"')
-	print(' ')
-	print(' #x para voltar')
-	print('-------------------------------')
-	print(' ')
-	print(' #a Jena, de Água Ruim')
-	print(' ')
-
 def npcs():
-	title_npcs()
+	os.system('clear')
+	m = open("./npcs/menu_npcs", "r")
+	print(m.read())
 	val_key = keyboard.read_key()
 	if val_key == 'a':
 		del val_key
@@ -61,101 +38,49 @@ def npcs():
 				del val_key
 				npcs()
 	elif val_key == 'x':
-		title_adnd2e()
 		run()
 	npcs()
 
-# itens
-
-def title_itens():
-	os.system('clear')
-	print('-------------------------------')
-	print(' $ Buscar ________ em "itens"')
-	print(' ')
-	print(' #x para voltar')
-	print('-------------------------------')
-	print(' ')
-	print(' #a Opção "a"')
-	print(' ')
-
 def itens():
-	title_itens()
+	os.system('clear')
+	m = open("./itens/menu_itens", "r")
+	print(m.read())
 	val_key = keyboard.read_key()
 	if val_key == 'a':
 		del val_key
 		locais_iserilha()
 	elif val_key == 'x':
-		title_adnd2e()
 		run()
 	itens()
 
-# magias
-
-def title_magias():
-	os.system('clear')
-	print('-------------------------------')
-	print(' $ Buscar ________ em "magias"')
-	print(' ')
-	print(' #x para voltar')
-	print('-------------------------------')
-	print(' ')
-	print(' #a Opção "a"')
-	print(' ')
-
 def magias():
-	title_magias()
+	os.system('clear')
+	m = open("./magias/menu_magias", "r")
+	print(m.read())
 	val_key = keyboard.read_key()
 	if val_key == 'a':
 		del val_key
 		locais_iserilha()
 	elif val_key == 'x':
-		title_adnd2e()
 		run()
 	magias()
 
-# seres
-
-def title_seres():
-	os.system('clear')
-	print('-------------------------------')
-	print(' $ Buscar ________ em "seres"')
-	print(' ')
-	print(' #x para voltar')
-	print('-------------------------------')
-	print(' ')
-	print(' #a Opção "a"')
-	print(' ')
-
 def seres():
-	title_seres()
+	os.system('clear')
+	m = open("./seres/menu_seres", "r")
+	print(m.read())
 	val_key = keyboard.read_key()
 	if val_key == 'a':
 		del val_key
 		locais_iserilha()
 	elif val_key == 'x':
-		title_adnd2e()
 		run()
 	seres()
 
-# menu
-
-def title_adnd2e():
-	os.system('clear')
-	print('-------------------------------')
-	print(' $ Buscar _______ em "ad&d 2e"')
-	print(' ')
-	print('           -> compêndio  v0.1 ')
-	print('-------------------------------')
-	print(' ')
-	print(' #1 locais')
-	print(' #2 npcs')
-	print(' #3 itens')
-	print(' #4 magias')
-	print(' #5 seres')
-	print(' #6 regras')
-	print('')
-
 def run():
+	os.system('clear')
+	m = open("./menu_compendio", "r")
+	print(m.read())
 	if True:
 		val_key = keyboard.read_key()
 		if val_key == '1':
@@ -183,10 +108,6 @@ def run():
 				if val_key == 'x':
 					del val_key
 					run()
-	title_adnd2e()
 	run()
 
-# run
-
-title_adnd2e()
 run()
