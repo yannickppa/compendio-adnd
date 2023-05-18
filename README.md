@@ -1,2 +1,2 @@
-# compendio-adnd
-Compilado desta versão do jogo de Advanced Dungeons &amp; Dragons.
+
+# v0.2 Compêndio AD&D
