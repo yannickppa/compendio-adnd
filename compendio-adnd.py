@@ -12,12 +12,42 @@ def locais():
 			del val_key
 			while True:
 				os.system('clear')
-				f = open("./locais/locais_iserilha", "r")
+				f = open("./locais/locais_iserilha-vil", "r")
 				print(f.read())
 				val_key = keyboard.read_key()
 				if val_key == 'z':
 					del val_key
 					locais()
+		elif val_key == 'b':
+			del val_key
+			while True:
+				os.system('clear')
+				f = open("./locais/locais_iserilha-arr", "r")
+				print(f.read())
+				val_key = keyboard.read_key()
+				if val_key == 'z':
+					del val_key
+					locais()			
+		elif val_key == 'c':
+			del val_key
+			while True:
+				os.system('clear')
+				f = open("./locais/locais_iserilha-covil", "r")
+				print(f.read())
+				val_key = keyboard.read_key()
+				if val_key == 'z':
+					del val_key
+					locais()	
+		elif val_key == 'd':
+			del val_key
+			while True:
+				os.system('clear')
+				f = open("./locais/locais_iserilha-", "r")
+				print(f.read())
+				val_key = keyboard.read_key()
+				if val_key == 'z':
+					del val_key
+					locais()	
 		elif val_key == 'x':
 			run()
 
@@ -72,7 +102,14 @@ def seres():
 		val_key = keyboard.read_key()
 		if val_key == 'a':
 			del val_key
-			locais_iserilha()
+			while True:
+				os.system('clear')
+				f = open("./seres/seres_iserilha", "r")
+				print(f.read())
+				val_key = keyboard.read_key()
+				if val_key == 'z':
+					del val_key
+					seres()
 		elif val_key == 'x':
 			run()
 
